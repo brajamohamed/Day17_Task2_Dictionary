@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h2>Online Dictionary</h2></div>
+
+      <div class="formDiv" id="inputDiv">
+        <label for="input">Enter a word:</label>
+        <input type="text" placeholder="Enter your word here" id="input" />
+      </div>
+      <div class="button">
+        <button id="btn">Submit</button>
+      </div>
+      <div class="formDiv">
+        <label for="synonyms">Synonyms:</label>
+        <div contenteditable="true" id="synonymDiv" class="op">
+          <ul id="synonymList"></ul>
+        </div>
+      </div>
+
+      <div class="formDiv">
+        <label for="meaning">Meaning:</label>
+        <div id="meaning" class="op" id="meaningDiv" contenteditable="true">
+          <ul id="meaningList"></ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
